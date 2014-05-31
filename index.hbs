@@ -5,21 +5,18 @@
 {{! The main content area on the homepage }}
 <main class="content" role="main">
 
-    <p>Steve Kinney is the Director of Educational Technology at the Council for Economic Education and a former New York City public school teacher. His primary focus is managing the creation and development of rich, interactive, student-driven learning experiences using the latest web technologies.</p>
-
-    <h3>Essays, Articles, Posts and Whatnot</h3>
-
-    <p>I don't write often, but I if I did, this is where those sorts of things would go.</p>
+    <p class="introduction">Steve Kinney is the Director of Educational Technology at the Council for Economic Education and a former New York City public school teacher. His primary focus is managing the creation and development of rich, interactive, student-driven learning experiences using the latest web technologies.</p>
 
     <section class="posts">
+
+    <h2>Entries</h2>
+
     {{#foreach posts}}
 
-    <a href="{{url}}" class="{{post_class}}">
-      <article>
-        {{{title}}}
-        <span class="meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM, YYYY"}}</time></span>
-      </article>
-    </a>
+    <article class="post clearfix">
+      <h3><a href="{{url}}" class="{{post_class}}">{{{title}}}</a></h3>
+      <p class="meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM, YYYY"}}</time></p>
+    </article>
 
     {{/foreach}}
     </section>

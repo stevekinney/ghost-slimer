@@ -1,22 +1,21 @@
 @import 'colors';
 
-$footerLinkColor: #AAA;
-
 footer.site {
-  margin: 4rem 0 0 0;
+  padding: 2rem 0;
+  margin-top: 3rem;
   text-align: center;
   a {
-    color: $footerLinkColor;
+    color: $black;
     &:hover {
-      color: complement($linkColor);
+      color: #CCC;
     }
     &:active {
-      color: lighten(complement($linkColor), 20);
+      color: #AAA;
     }
   }
 }
 
 footer.site a:not(:first-child)::before {
   content: ' — ';
-  color: $black;
+  color: darken($highlight, 30);
 }

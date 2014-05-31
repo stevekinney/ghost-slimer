@@ -1,15 +1,20 @@
-body {
-  margin: 4rem 0;
+.container {
+  position: relative;
 }
 
-.container {
-  max-width: 568px;
-  margin: auto;
-  @media only screen and (min-width: 481px) and (max-width: 588px) {
-    max-width: 460px;
+.content {
+  padding: 0 1.5rem;
+  @media screen and (min-width: 481px) {
+    padding: 0 2rem;
   }
-  @media only screen and (min-width: 321px) and (max-width: 480px) {
-    max-width: 100%;
-    padding: 0 2em;
+  @media screen and (min-width: 768px) {
+    margin: 2rem auto;
+    max-width: 600px;
+  }
+  @media screen and (min-width: 900px) {
+    max-width: 700px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 800px;
   }
 }
