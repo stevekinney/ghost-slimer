@@ -19,6 +19,7 @@ module.exports = function(grunt) {
     clean: ['assets/css']
   });
 
+  grunt.registerTask('build', ['clean', 'sass']);
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
