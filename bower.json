@@ -1,0 +1,21 @@
+{
+  "name": "ghost-slimer",
+  "version": "0.0.0",
+  "authors": [
+    "Steve Kinney <hello@stevekinney.net>"
+  ],
+  "description": "A simple, stripped down theme for Ghost.",
+  "keywords": [
+    "ghost",
+    "theme"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/components",
+    "test",
+    "tests"
+  ]
+}

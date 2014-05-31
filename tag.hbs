@@ -1,0 +1,24 @@
+{{!< default}}
+
+{{> header}}
+
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+
+    {{#foreach posts}}
+
+    <article class="{{post_class}}">
+        <h3>
+          <a href="{{url}}">{{{title}}}</a>
+          <span class="meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM, YYYY"}}</time></span>
+        </h3>
+        <p>{{{excerpt}}}&hellip;</p>
+    </article>
+
+    {{/foreach}}
+
+    <div class="pagination">
+      {{pagination}}
+    <div class="pagination">
+
+</main>

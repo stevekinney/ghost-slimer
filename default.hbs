@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! You're probably going to want a build process here, buddy. }}
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,300">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+    <div class="container">
+      {{{body}}}
+    </div>
+
+    <footer class="site">
+        <a class="subscribe" href="{{@blog.url}}/rss/"> RSS</a>
+        <a class="subscribe" href="http://twitter.com/stevekinney"> Twitter</a>
+        <a class="subscribe" href="http://github.com/stevekinney"> Github</a>
+    </footer>
+
+    {{! Basically, this just brings in jQuery. }}
+    {{ghost_foot}}
+
+</body>
+</html>

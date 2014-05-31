@@ -1,0 +1,66 @@
+@import 'colors';
+
+@font-face {
+  font-family: 'League Gothic';
+  src: url('../fonts/league-gothic/leaguegothic-regular-webfont.eot');
+  src: url('../fonts/league-gothic/leaguegothic-regular-webfont.eot?iefix') format('eot'),
+       url('../fonts/league-gothic/leaguegothic-regular-webfont.woff') format('woff'),
+       url('../fonts/league-gothic/leaguegothic-regular-webfont.ttf') format('truetype'),
+       url('../fonts/league-gothic/leaguegothic-regular-webfont.svg#webfontZam02nTh') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: $black;
+  background-color: $white;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
+header.site h1, header.site h2 {
+  font-family: 'League Gothic';
+  font-size: 4rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+  a {
+    color: $black;
+    text-decoration: none;
+    &:hover {
+      color: lighten($black, 10);
+    }
+    &:active {
+      color: lighten($black, 30);
+    }
+  }
+}
+
+p, li {
+  line-height: 2em;
+}
+
+a {
+  color: $linkColor;
+  text-decoration: none;
+  -webkit-transition:color 1s;
+  transition:color 1s;
+  &:hover {
+    color: complement($linkColor);
+  }
+  &:hover {
+    color: lighten(complement($linkColor), 20);
+  }
+}
+
+.post h1, .post h2, .post h3 {
+  font-weight: 400;
+}
+
+.meta {
+  color: #999;
+  font-weight: 300;
+  &::before {
+    content: ' — ';
+  }
+}

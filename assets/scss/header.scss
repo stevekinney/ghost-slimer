@@ -1,0 +1,17 @@
+header.site ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+header.site li {
+  display: inline-block;
+  a {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    color: #666;
+    padding: 0.4em 0.8em;
+    &:hover {
+      background-color: #FAFAFA;
+    }
+  }
+}

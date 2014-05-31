@@ -1,0 +1,7 @@
+.sass-cache
+*.log
+*.un~
+.DS_Store
+node_modules
+assets/css/main.css
+assets/components
